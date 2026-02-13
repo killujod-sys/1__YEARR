@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For My Love ❤️</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #ffd6e8; /* Pastel Pink */
+    overflow-x: hidden;
+  }
+
+  /* Floating hearts background */
+  .heart {
+    position: fixed;
+    bottom: -50px;
+    color: #ff4d88;
+    font-size: 20px;
+    animation: floatUp 8s linear infinite;
+  }
+
+  @keyframes floatUp {
+    to {
+      transform: translateY(-110vh);
+      opacity: 0;
+    }
+  }
+
+  header {
+    text-align: center;
+    padding: 40px 20px 10px;
+  }
+
+  header h1 {
+    color: #ff3d7f;
+    font-size: 42px;
+    margin-bottom: 10px;
+  }
+
+  header p {
+    color: #555;
+    font-size: 18px;
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .card {
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    margin: 25px 0;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+    text-align: center;
+  }
+
+  .card img {
+    width: 220px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+  }
+
+  .note {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+  }
+
+  footer {
+    text-align: center;
+    padding: 30px;
+    color: #ff3d7f;
+    font-weight: 500;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- Floating Hearts Script Elements -->
+<script>
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.classList.add("heart");
+  heart.innerHTML = "💗";
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.fontSize = Math.random() * 20 + 15 + "px";
+  heart.style.animationDuration = Math.random() * 3 + 5 + "s";
+  document.body.appendChild(heart);
+
+  setTimeout(() => {
+    heart.remove();
+  }, 8000);
+}
+setInterval(createHeart, 400);
+</script>
+
+<header>
+  <h1>Happy Valentine’s Day ❤️</h1>
+  <p>For the most special person in my life</p>
+</header>
+
+<div class="container">
+
+  <!-- Image + Note 1 -->
+  <div class="card">
+    <img src="WhatsApp Image 2026-01-12 at 10.03.3 PM.jpeg">
+    <div class="note">
+      From the moment you came into my life, everything felt brighter,
+      warmer, and more meaningful. You are my favorite notification 💌
+    </div>
+  </div>
+
+  <!-- Image + Note 2 -->
+  <div class="card">
+    <img src="WhatsApp Image 2026-02-13 at 6.48.54 PM.jpeg">
+    <div class="note">
+      Every smile of yours is my daily motivation.
+      If loving you was a job, I’d be the most dedicated employee 💼❤️
+    </div>
+  </div>
+
+  <!-- Image + Note 3 -->
+  <div class="card">
+    <img src="WhatsApp Image 2026-01-12 at 10.03.31 PM.jpeg">
+    <div class="note">
+      I don’t know what I did to deserve you,
+      but I promise I’ll spend my life being grateful for it 🌸
+    </div>
+  </div>
+
+<footer>
+ <b>I Have only loved You My Sweet little Princess. 🥹❤️</b> 
+</footer>
+
+</body>
+</html>
